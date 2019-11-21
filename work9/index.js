@@ -1,10 +1,10 @@
 function cal() {
     let order = document.getElementById('order').value
-    order= parseInt(order) && Number(order)
-    if (!isNaN(order)){
+    order = parseInt(order) && Number(order)
+    if (!isNaN(order)) {
         let perbonacci = document.getElementById('Perbonacci')
-        perbonacci.value =recursion(order)
-    }else{
+        perbonacci.value = recursion(order)
+    } else {
         alert('请输入数字')
     
     }

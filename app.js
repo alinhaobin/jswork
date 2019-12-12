@@ -15,11 +15,11 @@ app.listen(8080,() => console.log('node express 服务器已启动，监听端�
 const openDefaultBrowser = function (url){
     var exec = require('child_process').exec;
      switch (process.platform) {
-         case "darwin":
-         exec('open'+ url);
+         case "darwin":~
+         exec('open '+ url);
           break;
           case "win32":
-              exec('start' + url);
+              exec('start ' + url);
               break;
               default:
                   exec('xdg-open', [url]);
